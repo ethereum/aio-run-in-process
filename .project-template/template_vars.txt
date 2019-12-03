@@ -1,6 +1,6 @@
-asyncio_run_in_process
-asyncio-run-in-process
-asyncio-run-in-process
-asyncio-run-in-process
-asyncio-run-in-process
-Simple asyncio friendly replacement for multiprocessing
+aio_run_in_process
+aio-run-in-process
+aio-run-in-process
+aio-run-in-process
+aio-run-in-process
+Simple async friendly replacement for multiprocessing for asyncio or trio

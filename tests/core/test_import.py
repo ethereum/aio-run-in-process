@@ -1,2 +1,2 @@
 def test_import():
-    import asyncio_run_in_process  # noqa: F401
+    import aio_run_in_process  # noqa: F401

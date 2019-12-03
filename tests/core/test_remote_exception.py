@@ -4,13 +4,13 @@ import sys
 
 import cloudpickle
 
-from asyncio_run_in_process._utils import (
+from aio_run_in_process._utils import (
     RemoteException,
 )
 
 
 def test_RemoteException(caplog):
-    logger = logging.getLogger('asyncio_run_in_process.testing')
+    logger = logging.getLogger('aio_run_in_process.testing')
 
     def recorder_func():
         try:

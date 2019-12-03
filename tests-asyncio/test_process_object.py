@@ -2,7 +2,7 @@ import asyncio
 
 import pytest
 
-from asyncio_run_in_process import (
+from aio_run_in_process import (
     State,
     open_in_process,
 )

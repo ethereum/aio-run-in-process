@@ -5,7 +5,7 @@ from pathlib import (
 
 import pytest
 
-from asyncio_run_in_process import (
+from aio_run_in_process import (
     run_in_process,
 )
 
