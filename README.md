@@ -1,25 +1,25 @@
-# asyncio-run-in-process
+# aio-run-in-process
 
-[![Join the chat at https://gitter.im/ethereum/asyncio-run-in-process](https://badges.gitter.im/ethereum/asyncio-run-in-process.svg)](https://gitter.im/ethereum/asyncio-run-in-process?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://circleci.com/gh/ethereum/asyncio-run-in-process.svg?style=shield)](https://circleci.com/gh/ethereum/asyncio-run-in-process)
-[![PyPI version](https://badge.fury.io/py/asyncio-run-in-process.svg)](https://badge.fury.io/py/asyncio-run-in-process)
-[![Python versions](https://img.shields.io/pypi/pyversions/asyncio-run-in-process.svg)](https://pypi.python.org/pypi/asyncio-run-in-process)
-[![Docs build](https://readthedocs.org/projects/asyncio-run-in-process/badge/?version=latest)](http://asyncio-run-in-process.readthedocs.io/en/latest/?badge=latest)
+[![Join the chat at https://gitter.im/ethereum/aio-run-in-process](https://badges.gitter.im/ethereum/aio-run-in-process.svg)](https://gitter.im/ethereum/aio-run-in-process?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://circleci.com/gh/ethereum/aio-run-in-process.svg?style=shield)](https://circleci.com/gh/ethereum/aio-run-in-process)
+[![PyPI version](https://badge.fury.io/py/aio-run-in-process.svg)](https://badge.fury.io/py/aio-run-in-process)
+[![Python versions](https://img.shields.io/pypi/pyversions/aio-run-in-process.svg)](https://pypi.python.org/pypi/aio-run-in-process)
+[![Docs build](https://readthedocs.org/projects/aio-run-in-process/badge/?version=latest)](http://aio-run-in-process.readthedocs.io/en/latest/?badge=latest)
    
 
-Simple asyncio friendly replacement for multiprocessing
+Simple aio friendly replacement for multiprocessing
 
-Read more in the [documentation on ReadTheDocs](https://asyncio-run-in-process.readthedocs.io/). [View the change log](https://asyncio-run-in-process.readthedocs.io/en/latest/releases.html).
+Read more in the [documentation on ReadTheDocs](https://aio-run-in-process.readthedocs.io/). [View the change log](https://aio-run-in-process.readthedocs.io/en/latest/releases.html).
 
 ## Quickstart
 
 ```sh
-pip install asyncio-run-in-process
+pip install aio-run-in-process
 ```
 
 ## Developer Setup
 
-If you would like to hack on asyncio-run-in-process, please check out the [Snake Charmers
+If you would like to hack on aio-run-in-process, please check out the [Snake Charmers
 Tactical Manual](https://github.com/ethereum/snake-charmers-tactical-manual)
 for information on how we do:
 
@@ -33,8 +33,8 @@ for information on how we do:
 You can set up your dev environment with:
 
 ```sh
-git clone git@github.com:ethereum/asyncio-run-in-process.git
-cd asyncio-run-in-process
+git clone git@github.com:ethereum/aio-run-in-process.git
+cd aio-run-in-process
 virtualenv -p python3 venv
 . venv/bin/activate
 pip install -e .[dev]
@@ -48,7 +48,7 @@ Show flake8 errors on file change:
 
 ```sh
 # Test flake8
-when-changed -v -s -r -1 asyncio_run_in_process/ tests/ -c "clear; flake8 asyncio_run_in_process tests && echo 'flake8 success' || echo 'error'"
+when-changed -v -s -r -1 aio_run_in_process/ tests/ -c "clear; flake8 aio_run_in_process tests && echo 'flake8 success' || echo 'error'"
 ```
 
 Run multi-process tests in one command, but without color:
@@ -64,7 +64,7 @@ Run in one thread, with color and desktop notifications:
 
 ```sh
 cd venv
-ptw --onfail "notify-send -t 5000 'Test failure ⚠⚠⚠⚠⚠' 'python 3 test on asyncio-run-in-process failed'" ../tests ../asyncio_run_in_process
+ptw --onfail "notify-send -t 5000 'Test failure ⚠⚠⚠⚠⚠' 'python 3 test on aio-run-in-process failed'" ../tests ../aio_run_in_process
 ```
 
 ### Release setup

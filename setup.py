@@ -44,15 +44,15 @@ with open('./README.md') as readme:
 
 
 setup(
-    name='asyncio-run-in-process',
+    name='aio-run-in-process',
     # *IMPORTANT*: Don't manually change the version here. Use `make bump`, as described in readme
     version='0.1.0-alpha.2',
-    description="""asyncio-run-in-process: Asyncio friendly replacement for multiprocessing""",
+    description="""aio-run-in-process: Async friendly replacement for multiprocessing for asyncio or trio""",
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='The Ethereum Foundation',
     author_email='snakecharmers@ethereum.org',
-    url='https://github.com/ethereum/asyncio-run-in-process',
+    url='https://github.com/ethereum/aio-run-in-process',
     include_package_data=True,
     install_requires=[
         "async-generator>=1.10,<2",
@@ -60,7 +60,7 @@ setup(
     ],
     python_requires='>=3.6, <4',
     extras_require=extras_require,
-    py_modules=['asyncio_run_in_process'],
+    py_modules=['aio_run_in_process'],
     license="MIT",
     zip_safe=False,
     keywords='ethereum',

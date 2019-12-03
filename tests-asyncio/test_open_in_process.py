@@ -4,7 +4,7 @@ import signal
 
 import pytest
 
-from asyncio_run_in_process import (
+from aio_run_in_process import (
     ProcessKilled,
     open_in_process,
 )

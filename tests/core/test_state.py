@@ -1,6 +1,6 @@
 import pytest
 
-from asyncio_run_in_process.state import (
+from aio_run_in_process.state import (
     State,
 )
 

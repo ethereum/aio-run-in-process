@@ -1,7 +1,7 @@
-asyncio-run-in-process
+aio-run-in-process
 ==============================
 
-Simple asyncio friendly replacement for multiprocessing to run a coroutine in an isolated process
+Simple async friendly replacement for multiprocessing to run a coroutine in an isolated process
 
 Contents
 --------
@@ -9,7 +9,7 @@ Contents
 .. toctree::
     :maxdepth: 3
 
-    asyncio_run_in_process
+    aio_run_in_process
     releases
 
 
@@ -20,7 +20,7 @@ We use ``run_in_process`` for something we want run in a process in a blocking m
 
 .. code-block:: python
 
-    from asyncio_run_in_process import run_in_process
+    from aio_run_in_process import run_in_process
 
     async def fib(n):
         if n <= 1:
@@ -37,7 +37,7 @@ We use ``open_in_process`` for something we want to run in the background.
 
 .. code-block:: python
 
-    from asyncio_run_in_process import open_in_process:
+    from aio_run_in_process import open_in_process:
 
     async def fib(n):
         if n <= 1:
